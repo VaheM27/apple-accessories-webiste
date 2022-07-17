@@ -1,0 +1,14 @@
+steps:
+ 
+  - name:       'node:16.10.0'
+    id:         Deploying Front
+    entrypoint: /bin/sh
+    args:
+    - '-c'
+    - |
+      cat .env && \
+      yarn install && \
+      npm i firebase-tools -g && \
+      yarn build && \ 
+      firebase deploy --project nordic-velo-website --only=hosting --debug
+timeout:        1200s

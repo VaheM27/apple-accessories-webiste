@@ -1,0 +1,36 @@
+.background {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 72px;
+      letter-spacing: -0.025em;
+      color: #f3f4f6;
+    }
+    .button {
+      background-color: #f3f4f6;
+      padding: 16px 24px;
+      border-radius: 8px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  .navbar {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background: #041323;
+    width: 100%;
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+
+      ul {
+        li {
+          list-style: none;
+          color: white;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .buttons {
+      width: 100%;
+      max-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      button {
+        padding: 8px 12px;
+        border: 1px solid transparent;
+        border-image: linear-gradient(to right, #90f784, #0ad0f3) 1;
+        background: none;
+        border-radius: 18px;
+
+        a {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
+}
